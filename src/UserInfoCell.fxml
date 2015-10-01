@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="55.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gifunogi.tui4javafx.CellController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #333333;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="iconImageView" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane>
+               <children>
+                  <VBox layoutX="5.0" layoutY="3.0" prefWidth="260.0" style="-fx-background-color: #333333;">
+                     <children>
+                        <Label fx:id="userNameLabel" alignment="TOP_LEFT" prefWidth="260.0" text="ほげ@hoge" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textLabel" text="StringStringStringStringStringStringString" textFill="WHITE" wrapText="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Label>
+                        <AnchorPane>
+                           <children>
+                              <Button layoutY="5.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="16.0">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="replyImageView" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="retweetButton" layoutX="28.0" layoutY="5.0" mnemonicParsing="false" onAction="#onRetweetButton" prefHeight="16.0" prefWidth="16.0">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="retweetImageView" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="favButton" layoutX="56.0" layoutY="5.0" mnemonicParsing="false" onAction="#onFavButton" prefHeight="16.0" prefWidth="16.0">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="favImageView" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

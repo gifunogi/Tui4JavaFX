@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" text="Tui4JavaFX" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gifunogi.tui4javafx.MainController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #333333;">
+         <children>
+            <ListView fx:id="listView" layoutX="32.6" layoutY="11.6" prefHeight="496.0" prefWidth="340.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0" />
+            <AnchorPane layoutX="25.0" layoutY="514.0" prefHeight="59.0" prefWidth="351.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="15.399999999999977" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="reloadButton" layoutX="5.0" mnemonicParsing="false" onAction="#onReloadButton" prefHeight="49.0" prefWidth="48.0">
+                     <graphic>
+                        <ImageView fx:id="reloadImageView" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/Reload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextArea fx:id="tweetTextArea" layoutX="80.0" prefHeight="58.0" prefWidth="188.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="95.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextArea>
+                  <Button fx:id="tweetButton" layoutX="277.4" layoutY="-1.0" mnemonicParsing="false" onAction="#onTweetButton" prefHeight="49.0" prefWidth="48.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fx:id="tweetImageView" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/Tweet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
